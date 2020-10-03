@@ -9,9 +9,7 @@ export default class DigitalClicker extends Component {
 
   handleClick = () => {
     this.setState(previousState => {
-      return {
         timesClicked: previousState.count + 1
-      }
     })
   }
 
