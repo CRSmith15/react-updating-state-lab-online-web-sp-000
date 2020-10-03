@@ -16,7 +16,7 @@ export default class DigitalClicker extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>Click here!</button>
+        <button onClick={this.handleClick}>{this.state.timesClicked}</button>
       </div>
     )
   }
