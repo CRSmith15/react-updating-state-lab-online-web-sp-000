@@ -6,4 +6,20 @@ export default class DigitalClicker extends Component {
     super();
     this.state = {timesClicked: 0}
   }
+
+  handleClick = () => {
+    this.setState(previousState => {
+      return {
+        count: previousState.count + 1
+      }
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <button onClick={this.handleClick}>Click here!</button>
+      </div>
+    )
+  }
 }
