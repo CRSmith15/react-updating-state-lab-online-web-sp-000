@@ -34,6 +34,6 @@ export default class YouTubeDebugger extends Component {
         <button className="bitrate" onClick={this.handleBitrate}>{this.state.settings.bitrate}</button>
         <button className="resolution" onClick={this.handleResolution}>{this.state.settings.resolution}</button>
       </div>
-    )
+    );
   }
 }
